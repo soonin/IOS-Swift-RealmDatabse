@@ -12,7 +12,28 @@
 		FA00BC2F20AF7582009E7482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA00BC2D20AF7582009E7482 /* Main.storyboard */; };
 		FA00BC3120AF7583009E7482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA00BC3020AF7583009E7482 /* Assets.xcassets */; };
 		FA00BC3420AF7583009E7482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA00BC3220AF7583009E7482 /* LaunchScreen.storyboard */; };
+		FA00BC3D20AF768B009E7482 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA00BC3B20AF768A009E7482 /* Realm.framework */; };
+		FA00BC3E20AF768B009E7482 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA00BC3B20AF768A009E7482 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA00BC3F20AF768B009E7482 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA00BC3C20AF768B009E7482 /* RealmSwift.framework */; };
+		FA00BC4020AF768B009E7482 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA00BC3C20AF768B009E7482 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA00BC4420AF7709009E7482 /* RelamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA00BC4320AF7709009E7482 /* RelamData.swift */; };
+		FA00BC4620AF7C38009E7482 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA00BC4520AF7C38009E7482 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA00BC4120AF768B009E7482 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA00BC4020AF768B009E7482 /* RealmSwift.framework in Embed Frameworks */,
+				FA00BC3E20AF768B009E7482 /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FA00BC2620AF7582009E7482 /* IOS-Swift-RealmDatabse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Swift-RealmDatabse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +43,10 @@
 		FA00BC3020AF7583009E7482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA00BC3320AF7583009E7482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA00BC3520AF7583009E7482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA00BC3B20AF768A009E7482 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		FA00BC3C20AF768B009E7482 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		FA00BC4320AF7709009E7482 /* RelamData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelamData.swift; sourceTree = "<group>"; };
+		FA00BC4520AF7C38009E7482 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA00BC3F20AF768B009E7482 /* RealmSwift.framework in Frameworks */,
+				FA00BC3D20AF768B009E7482 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +65,8 @@
 		FA00BC1D20AF7582009E7482 = {
 			isa = PBXGroup;
 			children = (
+				FA00BC3B20AF768A009E7482 /* Realm.framework */,
+				FA00BC3C20AF768B009E7482 /* RealmSwift.framework */,
 				FA00BC2820AF7582009E7482 /* IOS-Swift-RealmDatabse */,
 				FA00BC2720AF7582009E7482 /* Products */,
 			);
@@ -55,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				FA00BC2920AF7582009E7482 /* AppDelegate.swift */,
+				FA00BC4320AF7709009E7482 /* RelamData.swift */,
+				FA00BC4520AF7C38009E7482 /* TableViewController.swift */,
 				FA00BC2B20AF7582009E7482 /* ViewController.swift */,
 				FA00BC2D20AF7582009E7482 /* Main.storyboard */,
 				FA00BC3020AF7583009E7482 /* Assets.xcassets */,
@@ -74,6 +105,8 @@
 				FA00BC2220AF7582009E7482 /* Sources */,
 				FA00BC2320AF7582009E7482 /* Frameworks */,
 				FA00BC2420AF7582009E7482 /* Resources */,
+				FA00BC4120AF768B009E7482 /* Embed Frameworks */,
+				FA00BC4220AF76A6009E7482 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,6 +163,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FA00BC4220AF76A6009E7482 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA00BC2220AF7582009E7482 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +186,8 @@
 			files = (
 				FA00BC2C20AF7582009E7482 /* ViewController.swift in Sources */,
 				FA00BC2A20AF7582009E7482 /* AppDelegate.swift in Sources */,
+				FA00BC4420AF7709009E7482 /* RelamData.swift in Sources */,
+				FA00BC4620AF7C38009E7482 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +332,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "IOS-Swift-RealmDatabse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +353,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "IOS-Swift-RealmDatabse/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
